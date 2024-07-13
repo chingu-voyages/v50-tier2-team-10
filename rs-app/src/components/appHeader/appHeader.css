@@ -1,6 +1,6 @@
 .header-top {
     height: 50px;
-    
+
 }
 
 .rs-logo {
@@ -17,4 +17,9 @@
 
 .header-container {
     text-align: center;
+}
+
+.title {
+    font-size: 40px;
+    font-weight: 800;
 }

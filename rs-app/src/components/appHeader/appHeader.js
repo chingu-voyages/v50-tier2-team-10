@@ -18,8 +18,8 @@ const AppHeader = () => {
                 <img className='cart-icon' src={cartIcon} alt='shopping cart icon'/>
             </div>
             <div className='header-container'>
-                <h1 className='title'>Restaurant Simulator</h1>
-                <h2 className='sub-title'>Easy Ordering, Yummy Meals</h2>
+                <div className='title'>Restaurant Simulator</div>
+                <div className='sub-title'>Easy Ordering, Yummy Meals</div>
             </div>
         </header>
     );
