@@ -9,6 +9,12 @@
     float: left;
 }
 
+.cart-button {
+    float: right;
+    border: none;
+    background-color: white;
+}
+
 .cart-icon {
     width: 50px;
     height: auto;
