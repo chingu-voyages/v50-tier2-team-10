@@ -1,0 +1,13 @@
+.cart-contents {
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    width: 300px;
+    border: 1px solid;
+    z-index: 1000;
+}
+
+.cart-credit-title {
+    display: flex;
+    
+}
