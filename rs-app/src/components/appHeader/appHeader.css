@@ -1,3 +1,8 @@
+.header-top {
+    height: 50px;
+    
+}
+
 .rs-logo {
     width: 50px;
     height: auto;
@@ -8,4 +13,8 @@
     width: 50px;
     height: auto;
     float: right;
+}
+
+.header-container {
+    text-align: center;
 }
