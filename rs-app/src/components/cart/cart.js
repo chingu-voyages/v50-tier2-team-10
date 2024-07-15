@@ -1,14 +1,19 @@
 import React from "react";
 import './cart.css';
 
-const Cart = () => {
 
+const Cart = ({ toggleCart }) => {
+
+    const handleCloseCart = () => {
+        toggleCart();
+    };
 
 
 
     return (
         <div>
             <div className="cart-contents">
+                <button className="close-cart" onClick={handleCloseCart}>X</button>
                 <div className="cart-title">Your Cart</div>
                 <div className="cart-credit-container">
                     <h3 className="credit-title">Your Credit</h3>

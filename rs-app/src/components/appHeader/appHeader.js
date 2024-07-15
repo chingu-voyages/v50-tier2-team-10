@@ -28,7 +28,7 @@ const AppHeader = () => {
                 <div className='title'>Restaurant Simulator</div>
                 <div className='sub-title'>Easy Ordering, Yummy Meals</div>
             </div>
-            {isCartVisible && <Cart />}
+            {isCartVisible && <Cart toggleCart={toggleCart} />}
         </header>
     );
 };
