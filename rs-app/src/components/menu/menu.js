@@ -61,10 +61,9 @@ const Menu = () => {
                         <div className="item-description">Description: {item.dsc}</div>
                         <div className="item-price">Price: {item.price}</div>
                         <div className="item-country">Location: {item.country}</div>
+                        <button>Add to Order</button> 
                     </div>
-                    <div className="order-button">
-                        <button>Add to Order</button>
-                    </div>
+                    
                 </div>
                 ))}
             </div>
