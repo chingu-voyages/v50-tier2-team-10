@@ -1,6 +1,21 @@
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(4, 330px);
+    
+
+}
 .item-card {
     border: solid;
     width: 300px;
     height: auto;
+    margin: 5px;
+    padding: 10px;
+}
 
+.item-image {
+    width: 90%;
+    height: 50%;
+    padding-top: 1rem;
+    min-width: 0;
+    max-height: 40rem;
 }
