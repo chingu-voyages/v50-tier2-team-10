@@ -59,7 +59,7 @@ const Menu = () => {
                     <div className="item-details">
                         <h3 className="restaurant-name">{item.name}</h3> 
                         <div className="item-description">Description: {item.dsc}</div>
-                        <div className="item-price">Price: {item.price}</div>
+                        <div className="item-price">Price: ${item.price}</div>
                         <div className="item-country">Location: {item.country}</div>
                         <button>Add to Order</button> 
                     </div>
