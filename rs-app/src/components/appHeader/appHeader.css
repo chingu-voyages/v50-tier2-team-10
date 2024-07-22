@@ -1,0 +1,31 @@
+.header-top {
+    height: 50px;
+
+}
+
+.rs-logo {
+    width: 50px;
+    height: auto;
+    float: left;
+}
+
+.cart-button {
+    float: right;
+    border: none;
+    background-color: white;
+}
+
+.cart-icon {
+    width: 50px;
+    height: auto;
+    float: right;
+}
+
+.header-container {
+    text-align: center;
+}
+
+.title {
+    font-size: 40px;
+    font-weight: 800;
+}

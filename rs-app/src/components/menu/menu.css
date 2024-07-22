@@ -1,0 +1,43 @@
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(3, 450px);
+    gap: 10px;
+}
+.item-card {
+    border: solid;
+    width: 425px;
+    height: auto;
+    margin: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.item-image {
+    width: 90%;
+    height: auto;
+    padding-top: 1rem;
+    min-width: 0;
+    max-height: 40rem;
+    align-self: center;
+}
+
+.item-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.item-card button {
+    background-color: rgb(50, 49, 49);
+    color: white;
+    border: none;
+    width: 100%;
+    min-height: 30px;
+    cursor: pointer;
+    align-self: center;
+}
