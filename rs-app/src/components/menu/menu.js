@@ -43,7 +43,6 @@ const Menu = () => {
     return (
         <div>
             <div className="select-category">
-                {/* code by Kolade Chris from https://www.freecodecamp.org/news/html-select-tag-how-to-make-a-dropdown-menu-or-combo-list/ tutorial */}
                 <select value={selectedCategory} onChange={(e) => setSelectedCategory(e.target.value)}>
                     {categories.map(category => (
                         <option key={category} value={category}>
