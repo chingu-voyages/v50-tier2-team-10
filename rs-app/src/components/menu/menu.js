@@ -5,7 +5,7 @@ import './menu.css';
 const Menu = () => {
     const [menuData, setMenuData] = useState({});
     const [ categories, setCategories ] = useState([]);
-    const [selectedCategory, setSelectedCategory ] = useState('all');
+    const [selectedCategory, setSelectedCategory ] = useState('best-foods');
     const [isLoading, setIsLoading] = useState(true);
     const [error, setError] = useState(null);
 
@@ -13,9 +13,10 @@ const Menu = () => {
         const loadMenuData = async () => {
             try {
                 const data = await getMenu();
+                console.log('Menu Data: ', data);
                 setMenuData(data);
                 const category = Object.keys(data).filter(key => key !== 'pagination');
-                setCategories(['all', ...category]);
+                setCategories([...category]);
                 setIsLoading(false);
             } catch (error) {
                 setError(error.message);
@@ -27,18 +28,27 @@ const Menu = () => {
     }, []);
 
     const getMenuItems = () => {
-        if (selectedCategory === 'all') {
-            return Object.values(menuData).filter(
-                item => Array.isArray(item)
-            ).flat();
-        }
-        return menuData[selectedCategory] || [];
+        if (selectedCategory === 'our-foods') {
+            const uniqueMenuItems = new Set();
+            return menuData['our-foods']
+                ? menuData['our-foods'].filter(item => {
+                    if (!uniqueMenuItems.has(item.id)) {
+                        uniqueMenuItems.add(item.id);
+                        return true;
+                    }
+                    return false;
+                }).map(item => ({ ...item, category: 'our-foods' }))
+                : [];
+            }
+        return menuData[selectedCategory] ? menuData[selectedCategory].map(item => (
+            { ...item, category: selectedCategory})) : [];
     }
 
     if (isLoading) return <div>Loading... Please wait...</div>
     if (error) return <div>Error: {error} </div>
 
     const showItems = getMenuItems();
+    console.log('Filtered items: ', showItems);
 
     return (
         <div>
@@ -53,7 +63,7 @@ const Menu = () => {
             </div>
             <div className="menu-items">
                 {showItems.map(item => (
-                <div key={item.id} className="item-card">
+                <div key={`${item.category}-${item.id}`} className="item-card">
                     <img className="item-image" src={item.img} alt={item.name}/>
                     <div className="item-details">
                         <h3 className="restaurant-name">{item.name}</h3> 
