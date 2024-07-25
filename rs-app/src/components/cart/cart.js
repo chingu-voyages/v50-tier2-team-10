@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import './cart.css';
 import CartItems from "../cart-items/cart-items";
 import Menu from "../menu/menu";
+import AppHeader from "../appHeader/appHeader";
 
 
 const Cart = () => {
@@ -31,8 +32,13 @@ const Cart = () => {
 
     return (
         <div>
+            <AppHeader toggleCart={toggleCart} />
+            <Menu addToCart={addToCart} />
+           {isCartVisible && ( 
             <div className="cart-contents">
-                <button className="close-cart" onClick={handleCloseCart}>X</button>
+                <button className="close-cart" onClick={handleCloseCart}>
+                    X
+                </button>
                 <div className="cart-title">Your Cart</div>
                 <div className="cart-credit-container">
                     <h3 className="credit-title">Your Credit</h3>
@@ -51,8 +57,8 @@ const Cart = () => {
                     <div className="grand-total">Grand Total: </div>
                     <button className="pay-now">Pay Now</button>
                 </div>
-            </div>
-            <Menu addToCart={addToCart} />
+            </div>)}
+            
         </div>
 
 

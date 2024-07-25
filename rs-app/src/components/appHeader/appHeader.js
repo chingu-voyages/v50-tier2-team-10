@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import cartIcon from './cart_icon.png';
 import rsLogo from './logo_black.png';
-import Cart from '../cart/cart';
 import './appHeader.css';
 
 
