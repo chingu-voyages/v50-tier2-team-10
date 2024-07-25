@@ -13,6 +13,7 @@
     float: right;
     border: none;
     background-color: white;
+    cursor: pointer;
 }
 
 .cart-icon {
@@ -20,6 +21,7 @@
     height: auto;
     float: right;
 }
+
 
 .header-container {
     text-align: center;
