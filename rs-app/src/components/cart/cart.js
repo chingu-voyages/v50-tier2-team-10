@@ -47,14 +47,14 @@ const Cart = () => {
                     <button className="add-credit">Add Credit</button>
                 </div>
                 <div className="order-summary-container">
-                    <div className="order-summary-title">Order Summary</div>
+                    <h3 className="order-summary-title">Order Summary</h3>
                     <CartItems cart={cart} removeFromCart={removeFromCart} />
                     <div className="order-total">Order Total (Subtotal): </div>
-                    <div className="tip-title">Tip</div>
+                    <h4 className="tip-title">Tip</h4>
                     <input className="tip-to-add" type='number' placeholder="Enter tip amount"/>
                     <button className="add-tip">Add Tip</button>
                     <div className="tip-amount">Tip Amount: </div>
-                    <div className="grand-total">Grand Total: </div>
+                    <h4 className="grand-total">Grand Total: </h4>
                     <button className="pay-now">Pay Now</button>
                 </div>
             </div>)}
