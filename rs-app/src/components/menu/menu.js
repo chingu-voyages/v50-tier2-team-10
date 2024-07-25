@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { getMenu } from "../../menu-api/menu-api";
 import './menu.css';
 
-const Menu = () => {
+const Menu = ({ addToCart }) => {
     const [menuData, setMenuData] = useState({});
     const [ categories, setCategories ] = useState([]);
     const [selectedCategory, setSelectedCategory ] = useState('best-foods');
@@ -70,7 +70,7 @@ const Menu = () => {
                         <div className="item-description">Description: {item.dsc}</div>
                         <div className="item-price">Price: ${item.price}</div>
                         <div className="item-country">Location: {item.country}</div>
-                        <button>Add to Order</button> 
+                        <button onClick={() => addToCart(item)}>Add to Order</button> 
                     </div>
                     
                 </div>

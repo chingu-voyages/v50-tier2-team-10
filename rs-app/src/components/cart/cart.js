@@ -1,8 +1,27 @@
-import React from "react";
+import React, {useState} from "react";
 import './cart.css';
+import CartItems from "../cart-items/cart-items";
+import Menu from "../menu/menu";
 
 
-const Cart = ({ toggleCart }) => {
+const Cart = () => {
+    const [cart, setCart] = useState([]);
+    const [cartTotal, setCartTotal] = useState(0);
+    const [cartSubTotal, setCartSubTotal] = useState(0);
+    const [tip, setTip] = useState(0);
+    const [isCartVisible, setCartVisible] = useState(false);
+
+    const addToCart = (menuItem) => {
+        setCart([...cart, menuItem]);
+    };
+
+    const removeFromCart = (item) => {
+        setCart(cart.filter((cartItem) => cartItem.id !== item.id));
+    };
+
+    const toggleCart = () => {
+        setCartVisible(!isCartVisible);
+    }
 
     const handleCloseCart = () => {
         toggleCart();
@@ -23,7 +42,7 @@ const Cart = ({ toggleCart }) => {
                 </div>
                 <div className="order-summary-container">
                     <div className="order-summary-title">Order Summary</div>
-                    <div>menu items</div>
+                    <CartItems cart={cart} removeFromCart={removeFromCart} />
                     <div className="order-total">Order Total (Subtotal): </div>
                     <div className="tip-title">Tip</div>
                     <input className="tip-to-add" type='number' placeholder="Enter tip amount"/>
@@ -33,6 +52,7 @@ const Cart = ({ toggleCart }) => {
                     <button className="pay-now">Pay Now</button>
                 </div>
             </div>
+            <Menu addToCart={addToCart} />
         </div>
 
 

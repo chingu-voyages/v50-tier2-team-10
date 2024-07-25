@@ -5,15 +5,7 @@ import Cart from '../cart/cart';
 import './appHeader.css';
 
 
-const AppHeader = () => {
-
-    const [isCartVisible, setCartVisible] = useState(false);
-
-    const toggleCart = () => {
-        setCartVisible(!isCartVisible);
-    };
-
-
+const AppHeader = ({toggleCart}) => {
 
 
     return (
@@ -28,7 +20,6 @@ const AppHeader = () => {
                 <div className='title'>Restaurant Simulator</div>
                 <div className='sub-title'>Easy Ordering, Yummy Meals</div>
             </div>
-            {isCartVisible && <Cart toggleCart={toggleCart} />}
         </header>
     );
 };
