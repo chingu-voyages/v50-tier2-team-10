@@ -16,7 +16,7 @@ const AppHeader = ({toggleCart}) => {
                     </button>
             </div>
             <div className='header-container'>
-                <div className='title'>Restaurant Simulator</div>
+                <div className='title'>YumEase</div>
                 <div className='sub-title'>Easy Ordering, Yummy Meals</div>
             </div>
         </header>
