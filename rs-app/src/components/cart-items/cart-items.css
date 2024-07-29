@@ -1,0 +1,21 @@
+.restaurant {
+    font-weight: 800;
+}
+.ordered-item {
+    min-height: 50px;
+    border: 1px solid;
+    border-color: black;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-items-container button {
+    background-color: gray;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 80%;
+    align-self: flex-end;
+    align-items: center;
+}
