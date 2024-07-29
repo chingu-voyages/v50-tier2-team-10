@@ -1,11 +1,11 @@
 import React, {useState} from "react";
-import './cart.css';
+import './main.css';
 import CartItems from "../cart-items/cart-items";
 import Menu from "../menu/menu";
 import AppHeader from "../appHeader/appHeader";
 
 
-const Cart = () => {
+const Main = () => {
     const [cart, setCart] = useState([]);
     const [cartTotal, setCartTotal] = useState(0);
     const [cartSubTotal, setCartSubTotal] = useState(0);
@@ -65,4 +65,4 @@ const Cart = () => {
     );
 };
 
-export default Cart;
+export default Main;

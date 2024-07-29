@@ -1,6 +1,6 @@
 import './App.css';
 
-import Cart from './components/cart/cart';
+import Cart from './components/main/main';
 
 
 function App() {
