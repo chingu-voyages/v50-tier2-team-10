@@ -1,6 +1,6 @@
 .menu-items {
-    display: grid;
-    grid-template-columns: repeat(3, 450px);
+    display: flex;
+    flex-wrap: wrap;
     gap: 10px;
 }
 .item-card {

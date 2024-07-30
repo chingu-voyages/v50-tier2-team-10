@@ -10,10 +10,10 @@ const AppHeader = ({toggleCart}) => {
     return (
         <header className='header-page'>
             <div className='header-top'>
-                <img className='rs-logo' src={rsLogo} alt='cloche with RS written on top'/>
+                <a href="#"><img className='rs-logo' src={rsLogo} alt='cloche with RS written on top'/></a>
                 <button className='cart-button' onClick={toggleCart}>
-                <img className='cart-icon' src={cartIcon} alt='shopping cart icon'/>
-                    </button>
+                    <img className='cart-icon' src={cartIcon} alt='shopping cart icon'/>
+                </button>
             </div>
             <div className='header-container'>
                 <div className='title'>YumEase</div>
