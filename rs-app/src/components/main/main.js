@@ -68,8 +68,13 @@ const Main = () => {
     };
 
     const addTip = () => {
+        if ((tip + tipToAdd) < 0) {
+            alert("Tip cannot be negative. Please try again.")
+            setTip(0);
+            setTipToAdd(0);
+        } else {
         setTip(tip + tipToAdd);
-        setTipToAdd(0);
+        setTipToAdd(0);}
     };
 
 
@@ -87,7 +92,7 @@ const Main = () => {
                 <div className="cart-credit-container">
                     <h3 className="credit-title">Your Credit</h3>
                     <div className="current-credit">{`Current Credit: $${credit}`}</div>
-                    <input type='number' className="credit-to-add" value={creditToAdd} onChange={handleCreditChange} placeholder="Enter amount"/>
+                    <input type='number' className="credit-to-add" min="0" step="1" value={creditToAdd} onChange={handleCreditChange} placeholder="Enter amount"/>
                     <button className="add-credit" onClick={addCredit}>Add Credit</button>
                 </div>
                 <div className="order-summary-container">
