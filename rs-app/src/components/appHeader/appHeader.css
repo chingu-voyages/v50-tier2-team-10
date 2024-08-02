@@ -1,11 +1,13 @@
 .header-top {
     height: 50px;
-
+    width: 100vw;
+    position: fixed;
+    background-color: white;
 }
 
 .rs-logo {
-    width: 50px;
-    height: auto;
+    width: auto;
+    height: 50px;
     float: left;
 }
 
@@ -13,16 +15,19 @@
     float: right;
     border: none;
     background-color: white;
+    cursor: pointer;
 }
 
 .cart-icon {
-    width: 50px;
-    height: auto;
+    width: auto;
+    height: 48px;
     float: right;
 }
 
+
 .header-container {
     text-align: center;
+    padding-top: 50px;
 }
 
 .title {
