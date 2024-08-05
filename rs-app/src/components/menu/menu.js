@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { getMenu } from "../../menu-api/menu-api";
+// import Img from "../brokenImage/brokenImage";
+import defaultImg from "../../images/placeholder.png";
 import './menu.css';
 
 const Menu = ({ addToCart }) => {
@@ -47,6 +49,11 @@ const Menu = ({ addToCart }) => {
     if (isLoading) return <div>Loading... Please wait...</div>
     if (error) return <div>Error: {error} </div>
 
+    // from https://www.positronx.io/how-to-handle-images-onload-and-onerror-events-in-react-js/
+    const handleImageError = (e) => {
+        e.currentTarget.src = defaultImg;
+    }
+
     const showItems = getMenuItems();
     console.log('Filtered items: ', showItems);
 
@@ -64,7 +71,7 @@ const Menu = ({ addToCart }) => {
             <div className="menu-items">
                 {showItems.map(item => (
                 <div key={`${item.category}-${item.id}`} className="item-card">
-                    <img className="item-image" src={item.img} alt={item.name}/>
+                    <img className="item-image" src={item.img} alt={item.dsc} onError={handleImageError}/>
                     <div className="item-details">
                         <h3 className="restaurant-name">{item.name}</h3> 
                         <div className="item-description">Description: {item.dsc}</div>
