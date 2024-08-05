@@ -1,0 +1,21 @@
+.footer-container {
+    max-height: 550px;
+    width: 100vw;
+    background-color: #add693;
+    text-align: center;
+}
+
+.logo {
+    max-height: 200px;
+    width: auto;
+    justify-content: center;
+}
+
+.about-app {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.github-link {
+    padding-bottom: 20px;
+}
