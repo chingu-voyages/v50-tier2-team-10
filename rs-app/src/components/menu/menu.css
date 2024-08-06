@@ -1,10 +1,19 @@
+.select-category {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
 .menu-items {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    justify-content: center;
+    background-color:#f0f0f0;
 }
+
 .item-card {
-    border: solid;
+    border: none;
     width: 425px;
     height: auto;
     margin: 5px;
@@ -14,6 +23,9 @@
     justify-content: space-between;
     height: 100%;
     box-sizing: border-box;
+    align-self: center;
+    background-color: #fff;
+    border-radius: 10px;
 }
 
 .item-image {
@@ -33,11 +45,12 @@
 }
 
 .item-card button {
-    background-color: rgb(50, 49, 49);
+    background-color: #f97316;
     color: white;
     border: none;
     width: 100%;
     min-height: 30px;
     cursor: pointer;
     align-self: center;
+    border-radius: 10px;
 }
