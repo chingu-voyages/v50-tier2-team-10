@@ -23,7 +23,7 @@ The name "YumEase" is a creative play on the word "Yummies," reflecting our comm
 
 **Ease**: Captures our commitment to providing a smooth, hassle-free ordering process.
 
-<img src="./src/images/screenshot.png" alt="YumEase" width="800" height="auto">
+<img src="./rs-app/src/images/screenshot.png" alt="YumEase" width="800" height="auto">
 
 <br>
 
