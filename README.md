@@ -1,4 +1,4 @@
-# <img src="./src/images/logo_orange.png" alt="YumEase Logo" width="80" height="auto"> YumEase: Easy Ordering, Yummy Meals
+# <img src="./rs-app/src/images/logo_orange.png" alt="YumEase Logo" width="80" height="auto"> YumEase: Easy Ordering, Yummy Meals
 Welcome to YumEase, your go-to app for easy food ordering! Explore diverse menus from various restaurants, place your order effortlessly, and enjoy your meal in no time.
 
 <br>
