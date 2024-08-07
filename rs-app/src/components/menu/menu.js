@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { getMenu } from "../../menu-api/menu-api";
-// import Img from "../brokenImage/brokenImage";
 import defaultImg from "../../images/placeholder.png";
 import './menu.css';
 
@@ -59,6 +58,9 @@ const Menu = ({ addToCart }) => {
 
     return (
         <div>
+            <div className="craving">
+                <h2>What's your craving today?</h2>
+            </div>
             <div className="select-category">
                 <select value={selectedCategory} onChange={(e) => setSelectedCategory(e.target.value)}>
                     {categories.map(category => (
