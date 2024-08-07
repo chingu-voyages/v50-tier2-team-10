@@ -6,9 +6,18 @@ import './menu.css';
 const Menu = ({ addToCart }) => {
     const [menuData, setMenuData] = useState({});
     const [ categories, setCategories ] = useState([]);
-    const [selectedCategory, setSelectedCategory ] = useState('best-foods');
+    const [selectedCategory, setSelectedCategory ] = useState('Popular Dishes');
     const [isLoading, setIsLoading] = useState(true);
     const [error, setError] = useState(null);
+
+
+    // map of changed category names to original
+    const changedCategories = {
+        'best-foods': 'Popular Dishes',
+        'our-foods': 'All Dishes',
+        'fried-chicken': 'Fried Chicken',
+        'ice-cream': 'Ice Cream'
+    };
 
     useEffect(() => {
         const loadMenuData = async () => {
@@ -17,7 +26,27 @@ const Menu = ({ addToCart }) => {
                 console.log('Menu Data: ', data);
                 setMenuData(data);
                 const category = Object.keys(data).filter(key => key !== 'pagination');
-                setCategories([...category]);
+                const formattedCategories = category.map(selection => {
+                    let formatted = selection.replace(/\b\w/g, char => char.toUpperCase());
+
+                    if (formatted === 'Best-Foods') {
+                        formatted = 'Popular Dishes';
+                    }
+                    if (formatted === 'Our-Foods') {
+                        formatted = "All Dishes";
+                    }
+                    if (formatted === 'Fried-Chicken') {
+                        formatted = 'Fried Chicken';
+                    }
+                    if (formatted === 'Ice-Cream') {
+                        formatted = "Ice Cream";
+                    }
+
+
+                    return formatted;
+
+                })
+                setCategories(formattedCategories);
                 setIsLoading(false);
             } catch (error) {
                 setError(error.message);
@@ -29,7 +58,9 @@ const Menu = ({ addToCart }) => {
     }, []);
 
     const getMenuItems = () => {
-        if (selectedCategory === 'our-foods') {
+        // Find original key for selected category
+        const originalCategory = Object.keys(changedCategories).find(key => changedCategories[key] === selectedCategory) || selectedCategory.toLowerCase().replace(/\s+/g, '-');
+        if (originalCategory === 'our-foods') {
             const uniqueMenuItems = new Set();
             return menuData['our-foods']
                 ? menuData['our-foods'].filter(item => {
@@ -41,8 +72,8 @@ const Menu = ({ addToCart }) => {
                 }).map(item => ({ ...item, category: 'our-foods' }))
                 : [];
             }
-        return menuData[selectedCategory] ? menuData[selectedCategory].map(item => (
-            { ...item, category: selectedCategory})) : [];
+        return menuData[originalCategory] ? menuData[originalCategory].map(item => (
+            { ...item, category: originalCategory})) : [];
     }
 
     if (isLoading) return <div>Loading... Please wait...</div>
