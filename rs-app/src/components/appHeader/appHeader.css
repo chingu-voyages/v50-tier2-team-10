@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 .header-top {
     height: 50px;
     width: 100vw;
@@ -9,6 +13,7 @@
     width: auto;
     height: 50px;
     float: left;
+    margin: 0 5px;
 }
 
 .cart-button {
@@ -22,6 +27,7 @@
     width: auto;
     height: 48px;
     float: right;
+    margin: 0 5px;
 }
 
 
