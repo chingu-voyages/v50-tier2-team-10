@@ -13,7 +13,7 @@ Welcome to YumEase, your go-to app for easy food ordering! Explore diverse menus
 
 <br>
 
-## 🍽️Overview 
+## 🍽️Overview
 
 YumEase streamlines the process of browsing restaurant menus, placing orders, and managing payments—all within a single-page application. Designed for food lovers, YumEase offers an intuitive and seamless experience, making it easier than ever to enjoy delicious meals from your favorite restaurants.
 
