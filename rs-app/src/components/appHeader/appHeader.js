@@ -1,7 +1,7 @@
 import React from 'react';
 import cartIcon from '../../images/cart_icon_orange.png';
 import rsLogo from '../../images/logo_orange.png';
-import cartFull from "../../images/cart_filled_2.png";
+import cartFull from "../../images/cart_filled_green_dot.png";
 import './appHeader.css';
 
 
