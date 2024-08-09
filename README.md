@@ -17,9 +17,9 @@ Welcome to YumEase, your go-to app for easy food ordering! Explore diverse menus
 
 YumEase streamlines the process of browsing restaurant menus, placing orders, and managing payments—all within a single-page application. Designed for food lovers, YumEase offers an intuitive and seamless experience, making it easier than ever to enjoy delicious meals from your favorite restaurants.
 
-The name "YumEase" is a creative play on the word "Yummies," reflecting our commitment to delivering an enjoyable and efficient user experience.
+The name "YumEase" is a creative play on the word "Yummies", where:
 
-**Yum**: Represents the core of our application—delicious food.
+**Yum**: Represents the core of our application — delicious food.
 
 **Ease**: Captures our commitment to providing a smooth, hassle-free ordering process.
 
