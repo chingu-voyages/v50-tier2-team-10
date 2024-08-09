@@ -1,38 +1,81 @@
-# voyage-tasks
+# <img src="./rs-app/src/images/logo_orange.png" alt="YumEase Logo" width="80" height="auto"> YumEase: Easy Ordering, Yummy Meals
+Welcome to YumEase, your go-to app for easy food ordering! Explore diverse menus from various restaurants, place your order effortlessly, and enjoy your meal in no time.
 
-Your project's `readme` is as important to success as your code. For 
-this reason you should put as much care into its creation and maintenance
-as you would any other component of the application.
+<br>
 
-If you are unsure of what should go into the `readme` let this article,
-written by an experienced Chingu, be your starting point - 
-[Keys to a well written README](https://tinyurl.com/yk3wubft).
+## Table of Contents
+1. [Overview](#Overview)
+2. [Tech Stack](#Tech-Stack)
+3. [Installation](#Installation)
+4. [Demo](#demo)
+5. [Team](#team)
+6. [Acknowledgments](#Acknowledgments)
 
-And before we go there's "one more thing"! Once you decide what to include
-in your `readme` feel free to replace the text we've provided here.
+<br>
 
-> Own it & Make it your Own!
+## 🍽️Overview
 
-## Team Documents
+YumEase streamlines the process of browsing restaurant menus, placing orders, and managing payments—all within a single-page application. Designed for food lovers, YumEase offers an intuitive and seamless experience, making it easier than ever to enjoy delicious meals from your favorite restaurants.
 
-You may find these helpful as you work together to organize your project.
+The name "YumEase" is a creative play on the word "Yummies", where:
 
-- [Team Project Ideas](./docs/team_project_ideas.md)
-- [Team Decision Log](./docs/team_decision_log.md)
+**Yum**: Represents the core of our application — delicious food.
 
-Meeting Agenda templates (located in the `/docs` directory in this repo):
+**Ease**: Captures our commitment to providing a smooth, hassle-free ordering process.
 
-- Meeting - Voyage Kickoff --> ./docs/meeting-voyage_kickoff.docx
-- Meeting - App Vision & Feature Planning --> ./docs/meeting-vision_and_feature_planning.docx
-- Meeting - Sprint Retrospective, Review, and Planning --> ./docs/meeting-sprint_retrospective_review_and_planning.docx
-- Meeting - Sprint Open Topic Session --> ./docs/meeting-sprint_open_topic_session.docx
+<img src="./rs-app/src/images/screenshot.png" alt="YumEase" width="900" height="auto">
 
-## Our Team
+<br>
 
-Everyone on your team should add their name along with a link to their GitHub
-& optionally their LinkedIn profiles below. Do this in Sprint #1 to validate
-your repo access and to practice PR'ing with your team *before* you start
-coding!
 
-- Jenny: [GitHub](https://github.com/eatwanderexplore) / [LinkedIn](https://linkedin.com/in/jennyurias)
-- Pao Ying Heng (Product Owner): [GitHub](https://github.com/paoyingheng) / [LinkedIn](https://linkedin.com/in/paoyingheng)
+## 🛠Tech Stack
+
+HTML, CSS, JavaScript, React
+
+
+<br>
+
+
+## ⚙Installation
+To run this project locally, follow these steps:
+
+### 1. Clone or download repository
+Open your terminal or command prompt. Use the git clone command to clone the project repository.
+
+### 2. Navigate to the project directory:
+Use the cd command to move into the project directory:
+```bash
+cd project-directory-name
+```
+
+### 3. Install dependencies
+```bash
+npm install
+```
+### 4. Start the development server 
+```bash
+npm start
+```
+
+<br>
+
+
+## 🎬Demo
+Check out our <a href="https://yumease.vercel.app/" target="_blank">live demo</a>.
+
+<br>
+
+
+## 👥Team
+Jenny Urias (Developer): [GitHub](https://github.com/eatwanderexplore) / [LinkedIn](https://linkedin.com/in/jennyurias)
+
+Pao Ying Heng (Product Owner): [GitHub](https://github.com/paoyingheng) / [LinkedIn](https://linkedin.com/in/paoyingheng)
+
+<br>
+
+
+## 🤝Acknowledgments
+
+We are grateful for the access to <a href="https://github.com/igdev116/free-food-menus-api"> free-food-menus-api</a>, which allows us incorporate a diverse range of menu items into YumEase. 
+  
+Special thanks to the <a href="https://www.chingu.io/">Chingu</a> community and their admins for their continuous support and resources. Chingu is a global collaboration platform where developers and designers work together on real-world projects to build their skills and portfolios. This project is part of **Voyage 50**, a volunteer project organized by Chingu. 

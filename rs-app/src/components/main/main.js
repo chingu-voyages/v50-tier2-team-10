@@ -81,7 +81,7 @@ const Main = () => {
 
     return (
         <div>
-            <AppHeader toggleCart={toggleCart} />
+            <AppHeader toggleCart={toggleCart} cart={cart}/>
             <Menu addToCart={addToCart} />
            {isCartVisible && ( 
             <div className="cart-contents">
