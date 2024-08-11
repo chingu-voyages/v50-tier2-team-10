@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+}
+
+.craving {
+  margin: 10px;
+  text-align: center;
+  color: #f87216;
+}
+
+/* select box styling from https://blog.logrocket.com/creating-custom-select-dropdown-css/ */
+.select-category {
+    display: flex;
+    margin: 20px auto;
+    max-width: 300px;
+    position: relative;
+}
+
+.select-category select {
+    appearance: none;
+    width: 100%;
+    font-size: 1.15rem;
+    padding: 0.675em 6em 0.675em 1em;
+    background-color: #fff;
+    border: 1px solid #caced1;
+    border-radius: 0.25rem;
+    color: #000;
+    cursor: pointer;
+  }
+
+.select-category::before,
+.select-category::after {
+  --size: 0.3rem;
+  position: absolute;
+  content: "";
+  right: 1rem;
+  pointer-events: none;
+}
+
+.select-category::before {
+  border-left: var(--size) solid transparent;
+  border-right: var(--size) solid transparent;
+  border-bottom: var(--size) solid black;
+  top: 40%;
+}
+
+.select-category::after {
+  border-left: var(--size) solid transparent;
+  border-right: var(--size) solid transparent;
+  border-top: var(--size) solid black;
+  top: 55%;
+}
+
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    background-color:#f0f0f0;
+}
+
+.item-card {
+    border: none;
+    width: 425px;
+    height: auto;
+    margin: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    box-sizing: border-box;
+    align-self: center;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.item-image {
+    width: 90%;
+    height: auto;
+    padding-top: 1rem;
+    min-width: 0;
+    max-height: 40rem;
+    align-self: center;
+}
+
+.item-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.item-card button {
+    background-color: #f97316;
+    color: white;
+    border: none;
+    width: 100%;
+    min-height: 30px;
+    cursor: pointer;
+    align-self: center;
+    border-radius: 10px;
+}

@@ -1,0 +1,60 @@
+.cart-contents {
+    position: fixed;
+    top: 120px;
+    right: 20px;
+    width: 300px; /* reduced width to allow full view on mobile */
+    border: 1px solid;
+    border-color: #bfbfb8;
+    background-color: #fff;
+    z-index: 1000;
+    opacity: 100%;
+    max-height: calc(100vh - 150px); /* adjust the height dynamically */
+    overflow-y: auto;
+    padding: 10px;
+    padding-bottom: 20px; /* extra bottom padding */
+    border-radius: 10px; /* add rounded corners */
+}
+
+.cart-credit-title {
+    display: flex;
+
+}
+
+.close-cart {
+    background-color: #ACD793; 
+    color: black;
+    border: #b2b1b3;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.add-credit {
+    background-color: #ACD793; 
+    color: black;
+    border: #b2b1b3;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 30%;
+}
+
+.add-tip {
+    background-color: #ACD793; 
+    color: black;
+    border: #c2c0c2;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 30%;
+}
+
+.pay-now {
+    background-color: #f97316; 
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 100%;
+}

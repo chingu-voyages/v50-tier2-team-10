@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+.header-top {
+    height: 50px;
+    width: 100vw;
+    position: fixed;
+    background-color: white;
+}
+
+.rs-logo {
+    width: auto;
+    height: 50px;
+    float: left;
+    margin: 0 5px;
+}
+
+.cart-button {
+    float: right;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.cart-icon {
+    width: auto;
+    height: 48px;
+    float: right;
+    margin: 0 5px;
+}
+
+
+.header-container {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    color: white;
+    background-image: url("../../images/background.png");
+}
+
+.title {
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.sub-title {
+    font-style: italic;
+    font-size: 25px;
+}
